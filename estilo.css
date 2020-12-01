@@ -1,0 +1,281 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+html{
+	font-size: 62.5%;
+}
+/*Header y Nav*/
+.header{
+	background-color: #1f1f1f;
+	display: flex;
+	align-items:center;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+figure.logo{
+	width: 190px;
+	margin-left: 40px;
+	display: flex;
+	user-select: none;
+	pointer-events: none;
+}
+.logo img{
+	width: 50px;
+}
+.logo figcaption{
+	position: absolute;
+	align-self: center;
+	margin-top: 10px;
+    margin-left: 30px;
+	font-size: 2rem;
+	color: #fff;
+}
+
+
+.nav__ul{
+	margin-right: 100px;
+	font-size: 2rem;
+}
+.nav__ul-li{
+	display: inline-block;
+    margin-right: 30px;
+}
+.nav__ul-li a{
+	text-decoration: none;
+	color: #fff;
+	outline-style: none;
+}
+.nav__ul-li a:hover{
+	color: #bbb;
+}
+.nav__ul-li a:active{
+	color: #888;
+
+}
+
+/*Principal*/
+.principal{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #1f1f1f;
+    height: 300px;
+    user-select: none;
+}
+.imagen-principal{
+	height: 100%;
+	min-width: 400px;
+	width: 500px;
+}
+.imagen-principal img{
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+.principal h1{
+     margin-left: 100px;
+     line-height: 140%;
+	font-size: 3.6rem;
+	color: #fff;
+}
+.principal h1 span{
+ color: #44ffff;
+}
+
+
+
+/*Sections protafolio*/
+#portafolio{
+	padding: 20px;
+	font-size: 2.2rem;
+}
+
+.project{
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+	align-items: center;
+}
+
+.project-destacado{
+	width: 500px;
+	font-size: 2.4rem;
+}
+.project-destacado h6{
+	color: #000a;
+}
+.project-imagecontainer{
+	width: 560px 1fr;
+}
+.project-imagecontainer img{
+	pointer-events: none;
+	border-radius: 30px;
+	width: 560px;
+	height: 100%;
+}
+
+/*Section experinecia*/
+#experiencia{
+		padding: 20px;
+	font-size: 2.2rem;
+
+}
+#experiencia h2{
+	margin-bottom: 20px;
+}
+.experiencia-container{
+	font-size: 2rem;
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	grid-gap: 20px;
+	grid-auto-rows: 400px;
+	text-align: center;
+}
+.experiencia-container article{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.texto-experiencia{
+	margin-top: -80px;
+	width: 80%;
+	background-color: #fff;
+	border: 1px solid #000;
+	border-radius: 10px;
+}
+.texto-experiencia a{
+	text-decoration: none;
+	padding: 10px;
+	background-color: #1f1f1f;
+	border-radius: 10px;
+	border: 1px solid #000;
+	color: #fff;
+}
+.texto-experiencia a:hover{
+     font-size: 104%;
+}
+.texto-experiencia p{
+	margin-bottom: 20px;
+}
+.experiencia-container figure img{
+	object-fit: contain;
+	height: 300px;
+	width: 100%;
+	border-radius: 10px;
+	pointer-events: none;
+}
+/*Contactos*/
+#contacto{
+	height: 200px;
+	padding: 20px;
+	background-color: #22aaaa;
+	display: flex;
+	justify-content: space-between;
+	align-content: center ;
+}
+#contacto .form{
+	display: grid;
+	grid-template-rows: 50% 50%;
+	align-items: start;
+}
+#contacto h3{
+	font-size: 3rem;
+	
+}
+#contacto form label{
+	font-size: 1.6rem;
+}
+#contacto form [type="email"]{
+	border: none;
+  border-bottom: 1px solid #222;
+  margin-left: 10px;
+  outline-style: none;
+  padding: 6px;
+  background: transparent;
+  width: 180px;
+  transition: all 1s;
+}
+#contacto form [type="email"]:focus{
+	width: 220px;
+}
+#contacto form [type="email"]:focus ~ [type="submit"]{
+animation: submit .8s infinite;
+animation-direction: alternate;
+ background: linear-gradient(to right, #000, #111, #1f1f1f,#000);
+}
+#contacto form [type="submit"]{
+	border: none;
+	outline-style: none;
+	padding: 8px 20px;
+	margin-left: 10px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #1f1f1f;
+	position: absolute;
+}
+#contacto form [type="submit"]:active{
+	padding: 10px 22px;
+}
+
+/*Footer*/
+/*Alineacion principal del footer*/
+.footer{
+	padding: 20px;
+	background-color: #1f1f1f;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+/*logo*/
+.footer .logo-footer{
+	width: 190px;
+	margin-left: 40px;
+	position: relative;
+	display: flex;
+	user-select: none;
+	pointer-events: none;
+}
+.footer img{
+	width: 50px;
+	height: 50px;
+}
+.footer figcaption{
+	position: absolute;
+	align-self: center;
+	margin-top: 10px;
+    margin-left: 30px;
+	font-size: 2rem;
+	color: #fff;
+}
+
+/*Redes sociales footer*/
+.redes-sociales{
+	margin-right: 80px;
+	display: grid;
+	grid-template-columns: repeat(3, 100px);
+}
+.redes-sociales img{
+	width: 100%;
+	height: 80px;
+	object-fit: contain;
+}
+/*Copyright*/
+.footer p{
+	text-align: center;
+	margin-left: 80px;
+	font-size: 2rem;
+	color: #fff;
+}
+
+/*NOTA creo que hare a partir de 824 el responsive de tablet o 768*/
+
+@keyframes submit{
+	from{
+     padding: 8px 20px;
+	}
+	to{
+      padding: 12px 24px;
+	}
+}
